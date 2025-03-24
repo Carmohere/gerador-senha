@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { PasswordGeneratorComponent } from './gerador-senha/gerador-senha.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [CommonModule, PasswordGeneratorComponent],
+  template: `
+    <main>
+      <app-gerador-senha></app-gerador-senha>
+    </main>
+  `,
+  styles: [`
+    main {
+      padding: 1rem;
+    }
+  `]
 })
-export class AppComponent {
-  title = 'gerador-senha';
-}
+export class AppComponent {}
