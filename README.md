@@ -2,7 +2,7 @@
 
 Um gerador de senhas seguro desenvolvido com Angular.
 
-![Screenshot do Gerador de Senhas](https://via.placeholder.com/800x500.png?text=Gerador+de+Senhas+Seguras)
+![Image](https://github.com/user-attachments/assets/da3bc77c-777f-4e02-b454-b007cc113f25)
 
 ## Funcionalidades
 
