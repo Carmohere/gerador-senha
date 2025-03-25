@@ -1,59 +1,63 @@
-# GeradorSenha
+# Gerador de Senhas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
+Um gerador de senhas seguro desenvolvido com Angular.
 
-## Development server
+![Screenshot do Gerador de Senhas](https://via.placeholder.com/800x500.png?text=Gerador+de+Senhas+Seguras)
 
-To start a local development server, run:
+## Funcionalidades
 
+- Geração de senhas com comprimento configurável (4-32 caracteres)
+- Opções de personalização:
+  - Letras maiúsculas (A-Z)
+  - Letras minúsculas (a-z)
+  - Números (0-9)
+  - Caracteres especiais (!#$%^&*)
+
+### Pré-requisitos
+
+- Node.js v16 ou superior
+- npm v8 ou superior
+- Angular CLI v14 ou superior
+
+### Instalação
+
+1. Clone o repositório:
 ```bash
+git clone https://github.com/Carmohere/gerador-senha
+cd gerador-senha
+```
+
+2. Instale as dependências:
+```
+npm install
+```
+3. Inicie o servidor de desenvolvimento:
+```
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+4. Acesse no navegador:
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Estrutura do Projeto
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```text
+gerador-senhas/
+├── .editorconfig
+├── .gitignore
+├── .vscode/
+│   ├── extensions.json
+│   ├── launch.json
+│   └── tasks.json
+├── README.md
+├── angular.json
+├── package.json
+├── src/
+│   ├── app/
+│   │   ├── app.component.ts
+│   │   └── gerador-senha/
+│   │       └── gerador-senha.component.ts
+│   ├── index.html
+│   └── styles.css
+└── tsconfig.json

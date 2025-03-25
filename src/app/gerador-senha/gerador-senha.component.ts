@@ -74,12 +74,12 @@ import { FormsModule } from '@angular/forms';
       display: block;
       font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     }
-
+  
     .generator-container {
       max-width: 500px;
       margin: 0 auto;
     }
-
+  
     .card {
       background: white;
       border-radius: 16px;
@@ -87,28 +87,28 @@ import { FormsModule } from '@angular/forms';
       overflow: hidden;
       margin-bottom: 2rem;
     }
-
+  
     .card-header {
       padding: 1.5rem;
-      background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+      background: #557153;
       color: white;
       text-align: center;
     }
-
+  
     .card-header h1 {
       margin: 0;
       font-size: 1.8rem;
       font-weight: 600;
     }
-
+  
     .card-body {
       padding: 1.5rem;
     }
-
+  
     .form-group {
       margin-bottom: 1.5rem;
     }
-
+  
     .length-value {
       display: inline-block;
       width: 2rem;
@@ -116,7 +116,7 @@ import { FormsModule } from '@angular/forms';
       font-weight: bold;
       color: #3a5a9f;
     }
-
+  
     .slider {
       width: 100%;
       height: 8px;
@@ -127,13 +127,13 @@ import { FormsModule } from '@angular/forms';
       outline: none;
       margin-bottom: 0.5rem;
     }
-
+  
     .options-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0.8rem;
     }
-
+  
     .option-checkbox {
       display: flex;
       align-items: center;
@@ -141,7 +141,7 @@ import { FormsModule } from '@angular/forms';
       cursor: pointer;
       user-select: none;
     }
-
+  
     .option-checkbox input {
       position: absolute;
       opacity: 0;
@@ -149,7 +149,7 @@ import { FormsModule } from '@angular/forms';
       height: 0;
       width: 0;
     }
-
+  
     .checkmark {
       height: 18px;
       width: 18px;
@@ -158,25 +158,25 @@ import { FormsModule } from '@angular/forms';
       margin-right: 8px;
       transition: all 0.2s;
     }
-
+  
     .option-checkbox:hover input ~ .checkmark {
       background-color: #ddd;
     }
-
+  
     .option-checkbox input:checked ~ .checkmark {
-      background-color: #3a5a9f;
+      background-color: #7D8F69;
     }
-
+  
     .checkmark:after {
       content: "";
       position: absolute;
       display: none;
     }
-
+  
     .option-checkbox input:checked ~ .checkmark:after {
       display: block;
     }
-
+  
     .option-checkbox .checkmark:after {
       left: 6px;
       top: 3px;
@@ -186,15 +186,15 @@ import { FormsModule } from '@angular/forms';
       border-width: 0 2px 2px 0;
       transform: rotate(45deg);
     }
-
+  
     .option-label {
       font-size: 0.9rem;
     }
-
+  
     .generate-btn {
       width: 100%;
       padding: 1rem;
-      background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+      background: #3A7D44;
       color: white;
       border: none;
       border-radius: 8px;
@@ -207,18 +207,18 @@ import { FormsModule } from '@angular/forms';
       align-items: center;
       justify-content: center;
     }
-
+  
     .generate-btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 5px 15px rgba(107, 115, 255, 0.3);
     }
-
+  
     .result-container {
       padding: 1.5rem;
       background: #f8f9fa;
       border-top: 1px solid #eee;
     }
-
+  
     .password-display {
       display: flex;
       align-items: center;
@@ -228,7 +228,7 @@ import { FormsModule } from '@angular/forms';
       padding: 1rem;
       font-size: 1.2rem;
     }
-
+  
     .copy-btn {
       background: none;
       border: none;
@@ -238,6 +238,7 @@ import { FormsModule } from '@angular/forms';
       padding: 0.2rem;
       border-radius: 4px;
     }
+  
 
   `]
 })
